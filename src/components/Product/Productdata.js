@@ -101,7 +101,6 @@ const Productdata = [
         image: "https://m.media-amazon.com/images/I/81Mha1C6QML._AC_SX679_.jpg"
     }
 
-
 ]
 
 export default Productdata;
