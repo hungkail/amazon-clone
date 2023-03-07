@@ -1,0 +1,28 @@
+.navBar {
+    background-color: #131921;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+
+
+
+.navBar__option {
+    display: flex;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.navBar__optionOne {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    
+}
