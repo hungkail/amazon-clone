@@ -1,3 +1,7 @@
+p {
+    margin: 5px;
+}
+
 .productDetails {
     display: flex;
     flex-direction: row ;
@@ -64,6 +68,14 @@
     object-fit: scale-down;
 }
 
-p {
-    margin: 5px;
+.blueText {
+    color: #0F7386;
+}
+
+.greenText {
+    color: #3D882F;
+}
+
+.redText {
+    color: #B2290B;
 }
