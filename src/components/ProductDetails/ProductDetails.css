@@ -28,16 +28,36 @@ p {
 
 }
 
+.coupon {
+    width: 60px;
+    height: 20px;
+    object-fit: scale-down;
+}
+
 .productDetails__imgContainerText {
     display: flex;
     flex-direction: row;
     text-align: center;
-    color: #636565;
     font-size: 12px;
 }
 
 .enlargeImage {
-    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.enlargeImage2 {
+    margin: 25px;
+}
+
+.IosShareIcon {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+}
+
+.enlargeImage:hover {
+    -moz-box-shadow: 0 0 5px #E57100;
+    -webkit-box-shadow: 0 0 5px #E57100;
+    box-shadow: 0px 0px 5px #E57100;
 }
 
 .productDetails__descriptionContainer {
@@ -69,7 +89,7 @@ p {
 }
 
 .blueText {
-    color: #0F7386;
+    color: #207A8C;
 }
 
 .greenText {
@@ -86,6 +106,30 @@ p {
     color: #B2290B;
 }
 
+.grayText {
+    color: #636565;
+}
+
 .bold {
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.largeFont {
+    font-size: 1.5rem;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: #C54B11;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.overflow {
+    display: inline-block;
 }
