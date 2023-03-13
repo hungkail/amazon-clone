@@ -99,6 +99,17 @@ const Productdata = [
         id: 20,
         name: "coffee container set coffee gator",
         image: "https://m.media-amazon.com/images/I/81Mha1C6QML._AC_SX679_.jpg"
+    },
+    {
+        id: 21,
+        name: "Optimum Nutrition Gold Standard 100% Whey Protein Powder, Extreme Milk Chocolate, 5 Pound (Packaging May Vary)",
+        image: "https://m.media-amazon.com/images/I/61a8-m+VGLL._AC_SY300_SX300_.jpg",
+        price: "$80.54",
+        brand: "Optimum Nutrition",
+        flavor: "Extreme Milk Chocolate",
+        dietType: "Vegetarian",
+        proteinSource: "Whey",
+        unitCount: "80.0 Ounce"
     }
 
 ]

@@ -7,7 +7,7 @@ const Product = () => {
   console.log(Productdata);
   const productImage = Productdata.map((product) =>
   <div>
-      <img src={product.image} alt="" />
+      <img className="img" src={product.image} alt="" />
   </div>
   )
   const productName = Productdata.map((name) =>

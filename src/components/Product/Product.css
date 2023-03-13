@@ -1,7 +1,7 @@
-img {
+    .img {
     max-height: 120px;
     max-width: 120px;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 .product__container {
