@@ -4,12 +4,12 @@ import IosShareIcon from '@mui/icons-material/IosShare';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Productdata from '../ProductSection/Productdata';
+import ProductSectionData from '../ProductSection/ProductSectionData.js';
 import ProductDetailsCoupon from "./ProductDetailsCoupon.png";
 import ProductDetailsPrime from "./ProductDetailsPrime.png";
 
 function ProductDetails() {
-    const productImage = Productdata.map((product) =>
+    const productImage = ProductSectionData.map((product) =>
     <div className="productDetails__mainImage grayText">
         <img className="productDetails__mainImage productDetails__pointer" src={product.image} alt="" />
         <div className="productDetails__centerText">
@@ -18,32 +18,32 @@ function ProductDetails() {
         </div>
     </div>
     )
-    const productPrice = Productdata.map((price) =>
+    const productPrice = ProductSectionData.map((price) =>
     <div>
         {price.price}
     </div>
     )
-    const productBrand = Productdata.map((brand) =>
+    const productBrand = ProductSectionData.map((brand) =>
     <div>
         {brand.brand}
     </div>
     )
-    const productFlavor = Productdata.map((flavor) =>
+    const productFlavor = ProductSectionData.map((flavor) =>
     <div>
         {flavor.flavor}
     </div>
     )
-    const productDietType = Productdata.map((dietType) =>
+    const productDietType = ProductSectionData.map((dietType) =>
     <div>
         {dietType.dietType}
     </div>
     )
-    const productProteinSource = Productdata.map((proteinSource) =>
+    const productProteinSource = ProductSectionData.map((proteinSource) =>
     <div>
         {proteinSource.proteinSource}
     </div>
     )
-    const productUnitCount = Productdata.map((unitCount) =>
+    const productUnitCount = ProductSectionData.map((unitCount) =>
     <div>
         {unitCount.unitCount}
     </div>
