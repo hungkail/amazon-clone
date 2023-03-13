@@ -22,10 +22,23 @@ p {
 }
 
 .mainImage {
+    position: relative;
     width: 350px;
     height: 350px;
     object-fit: scale-down;
+}
 
+.mainImage__click {
+    visibility: hidden;
+}
+
+.mainImage:hover .mainImage__click {
+    visibility: visible;
+}
+
+.mainImage:hover .mainImage__click2 {
+    position: absolute;
+    visibility: hidden;
 }
 
 .coupon {
@@ -34,10 +47,8 @@ p {
     object-fit: scale-down;
 }
 
-.productDetails__imgContainerText {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+.productDetails__imgContainer {
+
     font-size: 12px;
 }
 
@@ -131,5 +142,5 @@ p {
 }
 
 .overflow {
-    display: inline-block;
+    display: inline-block
 }

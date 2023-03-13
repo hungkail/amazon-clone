@@ -10,8 +10,10 @@ import Coupon from "./Coupon.png"
 
 function ProductDetails() {
     const productImage = Productdata.map((product) =>
-    <div>
+    <div className="mainImage grayText">
         <img className="mainImage pointer" src={product.image} alt="" />
+        <span className="mainImage__click2">Roll over image to zoom in</span>
+        <span className="mainImage__click">Click image to open expanded view</span>
     </div>
     )
     const productPrice = Productdata.map((price) =>
@@ -57,7 +59,6 @@ function ProductDetails() {
         </div>
         <div className="productDetails__imgContainer">
             {productImage[20]}
-            <span className="productDetails__imgContainerText grayText">Roll over image to zoom in</span>
         </div>
         <div className="enlargeImage2">
             <IosShareIcon className="IosShareIcon pointer"/>
