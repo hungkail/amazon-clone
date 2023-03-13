@@ -1,10 +1,12 @@
-p {
-    margin: 5px;
-}
-
 .productDetails {
     display: flex;
     flex-direction: row ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productDetails__p {
+    margin: 5px;
 }
 
 .productDetails__otherImages {
@@ -21,51 +23,57 @@ p {
     font-weight: 600;
 }
 
-.mainImage {
+.productDetails__mainImage {
     position: relative;
     width: 350px;
     height: 350px;
     object-fit: scale-down;
 }
 
-.mainImage__click {
+.productDetails__MainImageClick {
     visibility: hidden;
 }
 
-.mainImage:hover .mainImage__click {
+.productDetails__mainImage:hover .productDetails__MainImageClick {
     visibility: visible;
 }
 
-.mainImage:hover .mainImage__click2 {
+.productDetails__mainImage:hover .productDetails__mainImageClick2 {
     position: absolute;
     visibility: hidden;
 }
 
-.coupon {
+.productDetails__coupon {
     width: 60px;
     height: 20px;
     object-fit: scale-down;
 }
 
-.productDetails__imgContainer {
+.productDetails__prime {
+    width: 70px;
+    height: 18px;
+    object-fit: scale-down;
+}
 
+.productDetails__imgContainer {
     font-size: 12px;
 }
 
-.enlargeImage {
+.productDetails__enlargeImage {
     margin-bottom: 10px;
 }
 
-.enlargeImage2 {
+.productDetails__enlargeImage2 {
     margin: 25px;
 }
 
-.IosShareIcon {
+.productDetails__IosShareIcon {
     border: 1px solid #DDDDDD;
     border-radius: 50%;
+    padding: 5px;
 }
 
-.enlargeImage:hover {
+.productDetails__enlargeImage:hover {
     -moz-box-shadow: 0 0 5px #E57100;
     -webkit-box-shadow: 0 0 5px #E57100;
     box-shadow: 0px 0px 5px #E57100;
@@ -93,10 +101,14 @@ p {
     flex-direction: column;
 }
 
-.considerASimilarItem {
+.productDetails__considerASimilarItem {
     width: 130px;
     height: 130px;
     object-fit: scale-down;
+}
+
+.productDetails__centerText {
+    display: flex;
 }
 
 .blueText {
@@ -121,26 +133,33 @@ p {
     color: #636565;
 }
 
-.bold {
+hr {  
+    height: 1.5px;
+    background-color: #E7E7E7;  
+    margin: 2px 20px 0px 0px;
+    border: none;
+}
+
+.productDetails__bold {
     font-weight: 700;
 }
 
-.largeFont {
+.productDetails__largeFont {
     font-size: 1.5rem;
 }
 
-.pointer:hover {
+.productDetails__pointer:hover {
     cursor: pointer;
 }
 
-.hover:hover {
+.productDetailsOrangeTextHover:hover {
     color: #C54B11;
 }
 
-.underline:hover {
+.productDetailsUnderline:hover {
     text-decoration: underline;
 }
 
-.overflow {
+.productDetails__overflow {
     display: inline-block
 }

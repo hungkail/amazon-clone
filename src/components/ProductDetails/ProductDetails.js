@@ -4,16 +4,18 @@ import IosShareIcon from '@mui/icons-material/IosShare';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Productdata from '../Product/Productdata';
-import Coupon from "./Coupon.png"
-
+import Productdata from '../ProductSection/Productdata';
+import ProductDetailsCoupon from "./ProductDetailsCoupon.png";
+import ProductDetailsPrime from "./ProductDetailsPrime.png";
 
 function ProductDetails() {
     const productImage = Productdata.map((product) =>
-    <div className="mainImage grayText">
-        <img className="mainImage pointer" src={product.image} alt="" />
-        <span className="mainImage__click2">Roll over image to zoom in</span>
-        <span className="mainImage__click">Click image to open expanded view</span>
+    <div className="productDetails__mainImage grayText">
+        <img className="productDetails__mainImage productDetails__pointer" src={product.image} alt="" />
+        <div className="productDetails__centerText">
+            <span className="productDetails__mainImageClick2">Roll over image to zoom in</span>
+            <span className="productDetails__MainImageClick">Click image to open expanded view</span>
+        </div>
     </div>
     )
     const productPrice = Productdata.map((price) =>
@@ -50,45 +52,47 @@ function ProductDetails() {
     <div>
       <div className="productDetails">
         <div className="productDetails__otherImages">
-            <img className="enlargeImage pointer" src="https://m.media-amazon.com/images/I/51vt+41KjuS._AC_US40_.jpg" alt="" />
-            <img className="enlargeImage pointer" src="https://m.media-amazon.com/images/I/412oIBQQqFS._AC_US40_.jpg" alt="" />
-            <img className="enlargeImage pointer" src="https://m.media-amazon.com/images/I/51W1Wlv919S._AC_US40_.jpg" alt="" />
-            <img className="enlargeImage pointer" src="https://m.media-amazon.com/images/I/41C2GMyUt2S._AC_US40_.jpg" alt="" />
-            <img className="enlargeImage pointer" src="https://m.media-amazon.com/images/I/41RiO9iiBsS._AC_US40_.jpg" alt="" />
+            <img className="productDetails__enlargeImage productDetails__pointer" src="https://m.media-amazon.com/images/I/51vt+41KjuS._AC_US40_.jpg" alt="" />
+            <img className="productDetails__enlargeImage productDetails__pointer" src="https://m.media-amazon.com/images/I/412oIBQQqFS._AC_US40_.jpg" alt="" />
+            <img className="productDetails__enlargeImage productDetails__pointer" src="https://m.media-amazon.com/images/I/51W1Wlv919S._AC_US40_.jpg" alt="" />
+            <img className="productDetails__enlargeImage productDetails__pointer" src="https://m.media-amazon.com/images/I/41C2GMyUt2S._AC_US40_.jpg" alt="" />
+            <img className="productDetails__enlargeImage productDetails__pointer" src="https://m.media-amazon.com/images/I/41RiO9iiBsS._AC_US40_.jpg" alt="" />
             <span className="productDetails__otherImagesText">5 VIDEOS</span>
         </div>
         <div className="productDetails__imgContainer">
             {productImage[20]}
         </div>
-        <div className="enlargeImage2">
-            <IosShareIcon className="IosShareIcon pointer"/>
+        <div className="productDetails__enlargeImage2">
+            <IosShareIcon className="productDetails__IosShareIcon productDetails__pointer"/>
         </div>
         <div className="productDetails__descriptionContainer">
             <h3>Optimum Nutrition Gold Standard 100% Whey Protein Powder, Extreme Milk Chocolate, 5 Pound (Packaging May Vary)</h3>
-            <span className="blueText pointer hover underline">Visit the Optimum Nutrition Store</span>
-            <span><span className="pointer">⭐⭐⭐⭐⭐</span><KeyboardArrowDownIcon className="grayText pointer" /><span className="blueText pointer hover underline">9,549 ratings</span> | <span className="blueText pointer hover underline">143 answered questions</span></span>
-            <p className="grayText overflow">Price: <span className="redText largeFont overflow">{productPrice[20]}</span><span className="redText overflow"> ($1.01 / Ounce) </span></p>
-            <span className="greenText2 bold"><CheckCircleIcon className="greenText" /> Save $8.29 at checkout <span className="blueText pointer hover">Terms</span><KeyboardArrowDownIcon className="grayText pointer"/></span>
-            <span className="greenText"><img className="coupon" src={Coupon} alt="" /><input type="checkbox" />Save an extra 25% on your first Subscribe and Save Order.<span className="blueText pointer hover">  Terms</span><KeyboardArrowDownIcon className="grayText pointer"/></span>
-            <span><span className="blueText bold">Get 5% back ($4.02 in rewards)</span> on the amount charged to your Amazon Prime Rewards Visa Signature Card.</span>
-            <span>May be available at a lower price from <span className="blueText pointer hover underline">other sellers</span>, potentially without free Prime Shipping.</span>
-            <span>To use SNAP EBT, select <span className="bold">one-time purchase</span></span>
+            <span className="blueText productDetails__pointer productDetailsOrangeTextHover productDetailsUnderline">Visit the Optimum Nutrition Store</span>
+            <span><span className="productDetails__pointer">⭐⭐⭐⭐⭐</span><KeyboardArrowDownIcon className="grayText productDetails__pointer" /><span className="blueText productDetails__pointer productDetailsOrangeTextHover productDetailsUnderline">9,549 ratings</span> | <span className="blueText pointer productDetailsOrangeTextHover productDetailsUnderline">143 answered questions</span></span>
+            <hr />
+            <p className="productDetails__p grayText productDetails__overflow">Price: <span className="redText productDetails__largeFont productDetails__overflow">{productPrice[20]}</span><span className="redText productDetails__overflow"> ($1.01 / Ounce) </span></p>
+            <span className="greenText2 productDetails__bold"><CheckCircleIcon className="greenText" /> Save $8.29 at checkout <span className="blueText productDetails__pointer productDetailsOrangeTextHover">Terms</span><KeyboardArrowDownIcon className="grayText productDetails__pointer"/></span>
+            <span className="greenText"><img className="productDetails__coupon" src={ProductDetailsCoupon} alt="" /><input type="checkbox" />Save an extra 25% on your first Subscribe and Save Order.<span className="blueText pointer productDetailsOrangeTextHover">  Terms</span><KeyboardArrowDownIcon className="grayText pointer"/></span>
+            <span><span className="blueText productDetails__bold">Get 5% back ($4.02 in rewards)</span> on the amount charged to your Amazon Prime Rewards Visa Signature Card.</span>
+            <span>May be available at a lower price from <span className="blueText productDetails__pointer productDetailsOrangeTextHover productDetailsUnderline">other sellers</span>, potentially without free Prime Shipping.</span>
+            <span>To use SNAP EBT, select <span className="productDetails__bold">one-time purchase</span></span>
             <div className="productDetails2">
                 <div className="productDetails__itemInformation">
-                    <p>Brand</p>
-                    <p>Flavor</p>
-                    <p>Diet Type</p>
-                    <p>Protein Source</p>
-                    <p>Unit Count</p>
+                    <p className="productDetails__p">Brand</p>
+                    <p className="productDetails__p">Flavor</p>
+                    <p className="productDetails__p">Diet Type</p>
+                    <p className="productDetails__p">Protein Source</p>
+                    <p className="productDetails__p">Unit Count</p>
                 </div>
                 <div className="productDetails__itemInformation2">
-                    <p>{productBrand}</p>
-                    <p>{productFlavor}</p>
-                    <p>{productDietType}</p>
-                    <p>{productProteinSource}</p>
-                    <p>{productUnitCount}</p>
+                    <p className="productDetails__p">{productBrand}</p>
+                    <p className="productDetails__p">{productFlavor}</p>
+                    <p className="productDetails__p">{productDietType}</p>
+                    <p className="productDetails__p">{productProteinSource}</p>
+                    <p className="productDetails__p">{productUnitCount}</p>
                 </div>
             </div>
+            <hr />
             <h4>About this item</h4>
             <ul>
                 <li>Packaging may vary - new look with the same trusted quality</li>
@@ -98,17 +102,18 @@ function ProductDetails() {
                 <li>The world's best-selling whey protein powder</li>
                 <li>Banned substance tested and the highest quality control measures so you feel comfortable and confident consuming the product</li>
             </ul>
-            <span><CommentOutlinedIcon className="grayText" /> <span className="blueText pointer hover underline">Report incorrect product information.</span></span>
+            <span><CommentOutlinedIcon className="grayText" /> <span className="blueText productDetails__pointer productDetailsOrangeTextHover productDetailsUnderline">Report incorrect product information.</span></span>
+            <hr />
             <h3>Consider a similar item</h3>
             <div className="productDetails">
                 <div>
-                    <img className="considerASimilarItem pointer" src="https://m.media-amazon.com/images/I/71xqnuQ5JNL._AC_SY300_SX300_.jpg" alt="" />
+                    <img className="productDetails__considerASimilarItem productDetails__pointer" src="https://m.media-amazon.com/images/I/71xqnuQ5JNL._AC_SY300_SX300_.jpg" alt="" />
                 </div>
                 <div>
-                    <span className="blueText pointer hover underline">Garden of Life Sport Whey Portein Powder Vanilla, Premium Grass Fed Whey Protein Isolate Plus Probiotics for Immune System Health, 24g Protein, Non GMO, Gluten Free, Cold Processed - 20 Servings</span>
-                    <br/><span>1.41 Pound (Pack of 1)</span>
-                    <br/><span>⭐⭐⭐⭐⭐<span className="blueText pointer hover underline">(3752)</span></span>
-                    <br/><span className="redText">$41.44 ($1.84/Ounce)</span>
+                    <span className="blueText productDetails__pointer productDetailsOrangeTextHover productDetailsUnderline">Garden of Life Sport Whey Portein Powder Vanilla, Premium Grass Fed Whey Protein Isolate Plus Probiotics for Immune System Health, 24g Protein, Non GMO, Gluten Free, Cold Processed - 20 Servings</span>
+                    <br/><span className="productDetails__bold">1.41 Pound (Pack of 1)</span>
+                    <br/><span>⭐⭐⭐⭐⭐<span className="blueText productDetails__pointer productDetailsOrangeTextHover productDetailsUnderline">(3752)</span></span>
+                    <br/><span className="redText">$41.44 <span className="grayText">($1.84/Ounce)<img className="productDetails__prime" src={ProductDetailsPrime} alt="" /></span></span>
                     <span className="greenText">Climate Pledge Friendly</span>
                 </div>
             </div>
