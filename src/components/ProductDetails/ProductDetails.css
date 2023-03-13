@@ -54,7 +54,7 @@ p {
 .productDetails__itemInformation {
     display: flex;
     flex-direction: column;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .productDetails__itemInformation2 {
@@ -76,6 +76,16 @@ p {
     color: #3D882F;
 }
 
+.greenText2 {
+    color: #1A7F64;
+}
+
 .redText {
+    display: flex;
+    flex-wrap: nowrap;
     color: #B2290B;
+}
+
+.bold {
+    font-weight: 600;
 }

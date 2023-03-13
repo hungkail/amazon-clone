@@ -3,8 +3,44 @@ import "./ProductDetails.css"
 import OutboxOutlinedIcon from '@mui/icons-material/OutboxOutlined';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
+import Productdata from '../Product/Productdata';
 
 function ProductDetails() {
+    const productImage = Productdata.map((product) =>
+    <div>
+        <img className="mainImage" src={product.image} alt="" />
+    </div>
+    )
+    const productPrice = Productdata.map((price) =>
+    <div>
+        {price.price}
+    </div>
+    )
+    const productBrand = Productdata.map((brand) =>
+    <div>
+        {brand.brand}
+    </div>
+    )
+    const productFlavor = Productdata.map((flavor) =>
+    <div>
+        {flavor.flavor}
+    </div>
+    )
+    const productDietType = Productdata.map((dietType) =>
+    <div>
+        {dietType.dietType}
+    </div>
+    )
+    const productProteinSource = Productdata.map((proteinSource) =>
+    <div>
+        {proteinSource.proteinSource}
+    </div>
+    )
+    const productUnitCount = Productdata.map((unitCount) =>
+    <div>
+        {unitCount.unitCount}
+    </div>
+    )
   return (
     <div>
       <div className="productDetails">
@@ -17,7 +53,7 @@ function ProductDetails() {
             <span className="productDetails__otherImagesText">5 VIDEOS</span>
         </div>
         <div className="productDetails__imgContainer">
-            <img className="mainImage" src="https://m.media-amazon.com/images/I/71AdaOvTvIS._AC_SY879_.jpg" alt="" />
+            {productImage[20]}
             <span className="productDetails__imgContainerText">Roll over image to zoom in</span>
         </div>
         <div className="enlargeImage">
@@ -27,12 +63,12 @@ function ProductDetails() {
             <h3>Optimum Nutrition Gold Standard 100% Whey Protein Powder, Extreme Milk Chocolate, 5 Pound (Packaging May Vary)</h3>
             <span className="blueText">Visit the Optimum Nutrition Store</span>
             <span className="blueText">⭐⭐⭐⭐⭐▼ 9,549 ratings | 143 answered questions</span>
-            <p className="redText">Price: $80.54 ($1.01 / Ounce)</p>
-            <span><CheckCircleIcon />Save $8.29 at checkout Terms ▼</span>
+            <p className="redText">Price: {productPrice[20]} ($1.01 / Ounce)</p>
+            <span className="greenText2 bold"><CheckCircleIcon className="greenText2" />Save $8.29 at checkout <a className="blueText">Terms</a>▼</span>
             <span className="greenText">Coupon: <input type="checkbox" /> Save an extra 25% on your first Subscribe and Save Order.   Terms ▼</span>
-            <span className="blueText">Get 5% back ($4.02 in rewards) on the amout charged to your Amazon Prime Rewards Visa Signature Card.</span>
-            <span>May be available at a lower price from other sellers, potentially without free Prime Shipping.</span>
-            <span>To use SNAP EBT, select one-time purchase</span>
+            <span><a className="blueText bold">Get 5% back ($4.02 in rewards)</a> on the amout charged to your Amazon Prime Rewards Visa Signature Card.</span>
+            <span>May be available at a lower price from <a className="blueText">other sellers</a>, potentially without free Prime Shipping.</span>
+            <span>To use SNAP EBT, select <a className="bold">one-time purchase</a></span>
             <div className="productDetails2">
                 <div className="productDetails__itemInformation">
                     <p>Brand</p>
@@ -42,11 +78,11 @@ function ProductDetails() {
                     <p>Unit Count</p>
                 </div>
                 <div className="productDetails__itemInformation2">
-                    <p>Optimum Nutrition</p>
-                    <p>Extreme Milk Chocolate</p>
-                    <p>Vegetarian</p>
-                    <p>Whey</p>
-                    <p>80.0 Ounce</p>
+                    <p>{productBrand}</p>
+                    <p>{productFlavor}</p>
+                    <p>{productDietType}</p>
+                    <p>{productProteinSource}</p>
+                    <p>{productUnitCount}</p>
                 </div>
             </div>
             <h4>About this item</h4>
