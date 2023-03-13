@@ -1,4 +1,4 @@
-const Productdata = [
+const ProductSectionData = [
     {
         id: 1,
         name: "outlet tower",
@@ -111,7 +111,7 @@ const Productdata = [
         proteinSource: "Whey",
         unitCount: "80.0 Ounce"
     }
-
-]
-
-export default Productdata;
+  
+  ]
+  
+  export default ProductSectionData; 
