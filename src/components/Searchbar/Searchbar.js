@@ -19,8 +19,8 @@ function Searchbar() {
        </div>
        {/* Search Box */}
       <div className="searchBar__search">
-        <input type="text" className="searchBar__searchInput" />
-        <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover hover" />
+        <input type="text" className="searchBar__searchInput roundedEdgesLeft" />
+        <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover roundedEdgesRight hover" />
       </div>
       {/* Links */}
       <div className="searchBar__Nav">

@@ -100,3 +100,10 @@
     cursor: pointer;
   }
   
+  .roundedEdgesLeft {
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .roundedEdgesRight {
+    border-radius: 0px 5px 5px 0px;
+  }
