@@ -20,6 +20,10 @@
   .productSection__img:hover {
     cursor: pointer;
   }
+
+  .productSection__img2:hover {
+    cursor: pointer;
+  }
   
   .productSection__container {
     display: flex;
@@ -74,4 +78,8 @@
   
   .productSectionOrangeTextHover:hover {
     color: #C54B11;
+  }
+
+  .productSectionPointerHover:hover {
+    cursor: pointer;
   }
