@@ -111,7 +111,7 @@ const ProductSectionData = [
         proteinSource: "Whey",
         unitCount: "80.0 Ounce"
     }
-  
+
   ]
   
   export default ProductSectionData; 
