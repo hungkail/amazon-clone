@@ -41,6 +41,7 @@
   .footerPart2hover:hover {
     text-decoration: underline;
     color: white;
+    cursor: pointer;
   }
   
   .footerPart2__margin {
