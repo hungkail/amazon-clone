@@ -73,7 +73,7 @@ const ProductSection = () => {
       <div className="productSection__container2">
         <div className="productSection__relatedToText">
           <h3>Related to items you've viewed</h3>
-          <span className="productSection__blueText productSection__relatedtoTextPadding productSectionOrangeTextHover productSectionUnderlineHover">See more</span>
+          <span className="productSection__blueText productSection__relatedtoTextPadding productSectionOrangeTextHover productSectionUnderlineHover productSectionPointerHover">See more</span>
         </div>
         <div className="productSection__row2">
           {productImage2[13]}
