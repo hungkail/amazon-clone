@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Searchbar from "./components/Searchbar";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
           path="/"
           element={
             <div>
-              <Searchbar />
               <h1>This is Home Page</h1>
             </div>
           }
