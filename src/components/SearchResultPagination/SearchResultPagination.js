@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import ReactPaginate from "react-paginate";
 import "./SearchResultPagination.css"
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const PER_PAGE = 8;
 
@@ -38,8 +40,8 @@ function SearchResultPagination() {
     <div className="searchResultPagination__container">
 
       <ReactPaginate
-        previousLabel={"< Previous"}
-        nextLabel={"Next >"}
+        previousLabel={<div><KeyboardArrowLeftIcon className="searchResultPagination__directionArrow"/>Previous</div>}
+        nextLabel={<div>Next<KeyboardArrowRightIcon className="searchResultPagination__directionArrow"/></div>}
         pageCount={pageCount}
         pageRangeDisplayed={3}
         marginPagesDisplayed={1}
@@ -47,7 +49,7 @@ function SearchResultPagination() {
         containerClassName={"pagination"}
         previousLinkClassName={"pagination__link"}
         nextLinkClassName={"pagination__link"}
-        disabledClassName={"pagination__link--disabled"}
+        disabledClassName={"disabled"}
         activeClassName={"active"}
       />
 
