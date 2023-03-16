@@ -1,11 +1,14 @@
 import React from "react";
 import "./Product.css";
+import { Link } from "react-router-dom";
 
 function Product({ id, title, price, rating, image }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>{title}</p>
+        <Link to="/ProductPage">
+          <p>{title}</p>
+        </Link>
         <p className="product__price">
           <small>$</small>
           <strong>{price}</strong>
@@ -18,8 +21,8 @@ function Product({ id, title, price, rating, image }) {
             ))}
         </div>
       </div>
-
       <img src={image} alt="" />
+
       <button className="">Add to Cart</button>
     </div>
   );

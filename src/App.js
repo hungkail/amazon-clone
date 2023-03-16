@@ -2,6 +2,8 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
+import ProductPage from "./ProductPage";
+import SearchBar from "./components/Searchbar/Searchbar";
 
 function App() {
   return (
@@ -11,9 +13,8 @@ function App() {
           path="/"
           element={
             <div>
+              <SearchBar />
               <Home />
-              
-              <h1>This is Home Page</h1>
             </div>
           }
         />
@@ -34,10 +35,11 @@ function App() {
           }
         />
         <Route
-          path="/prime"
+          path="/ProductPage"
           element={
             <div>
-              <h1>Prime</h1>
+              <SearchBar />
+              <ProductPage />
             </div>
           }
         />
