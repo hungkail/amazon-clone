@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchBar.css";
+import "./Searchbar.css";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
