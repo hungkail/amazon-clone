@@ -1,0 +1,50 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+
+}
+
+.carousel__title {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin-left: 23px;
+    vertical-align: top;
+    text-align: left;
+    min-height: 100%;
+   
+   
+    
+    width: 160px;
+    height: 400px;
+    
+ 
+}
+
+.product__img {
+    height: 160px;
+    width: 160px;
+    object-fit: containerß;
+}
+
+.product__info {
+    height: 80px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    color: #007185;
+    font-size: 14px;
+}
+
+.product__info:hover {
+    color: orange;
+}
