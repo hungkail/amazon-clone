@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import ProductPage from "./ProductPage";
 import SearchBar from "./components/Searchbar/Searchbar";
+import ProductSection from "./components/ProductSection/ProductSection"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           element={
             <div>
               <SearchBar />
+              <ProductSection />
               <Home />
             </div>
           }
