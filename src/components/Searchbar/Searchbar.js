@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchBar.css";
+import "./Searchbar.css";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
@@ -68,10 +68,12 @@ function SearchBar() {
         </div>
         {/* Shopping Cart */}
         <div className="searchBar__optionBasket">
-          <ShoppingCartOutlinedIcon className="searchBarHover" />
-          <span className="searchBar__optionLine2 searchBar__shoppingCartIcon">
-            Cart
+          <Link to="/checkOut" style={{textDecoration: 'none', color: 'white'}}>
+            <ShoppingCartOutlinedIcon className="searchBarHover" />
+            <span className="searchBar__optionLine2 searchBar__shoppingCartIcon">
+              Cart
           </span>
+          </Link>
         </div>
       </div>
     </div>
