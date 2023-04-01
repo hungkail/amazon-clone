@@ -4,6 +4,7 @@ import "./FooterPart2.css"
 function FooterPart2() {
   return (
     <div className="footerPart2">
+        <div className="footerPart2_center">
         <div className="footerPart2__rowContainer">
             <div className="footerPart2__category footerPart2hover">
                 <span className="footerPart2__title">Amazon Music</span>
@@ -183,6 +184,7 @@ function FooterPart2() {
                 <span className="footerPart2__title"></span>
                 <span className="footerPart2__information"></span>
             </div>
+        </div>
         </div>
         <div className="footerPart2__bottomText">
             <span className="footerPart2__title"><span className="footerPart2__margin footerPart2hover">Conditions of Use </span><span className="footerPart2__margin footerPart2hover"> Privacy Notice </span><span className="footerPart2__margin footerPart2hover"> Your Ads Privacy Choices</span></span><br/>

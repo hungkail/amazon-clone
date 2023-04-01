@@ -5,6 +5,7 @@ import Home from "./Home";
 import ProductPage from "./ProductPage";
 import SearchBar from "./components/Searchbar/Searchbar";
 import ProductSection from "./components/ProductSection/ProductSection"
+import FooterPart2 from "./components/FooterPart2/FooterPart2"
 import ShoppingCartPage from "./components/ShoppingCartPage/ShoppingCartPage"
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <SearchBar />
               <ProductSection />
               <Home />
+              <FooterPart2 />
             </div>
           }
         />
