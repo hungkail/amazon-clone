@@ -1,12 +1,10 @@
 import React from 'react'
 import "./ShoppingCartPage.css"
-import SearchBar from "../SearchBar/SearchBar.js"
 import ShoppingCartPageBanner from "./ShoppingCartPageBanner.png"
 
 function ShoppingCartPage() {
   return (
     <div>
-      <SearchBar />
       <div className="shoppingCartPage">
         <div className="shoppingCartPage__bannerContainer">
           <img className="shoppingCartPage__Banner" src={ShoppingCartPageBanner} alt=""/>

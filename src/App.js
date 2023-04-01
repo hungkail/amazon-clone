@@ -6,6 +6,7 @@ import ProductPage from "./ProductPage";
 import SearchBar from "./components/Searchbar/Searchbar";
 import ProductSection from "./components/ProductSection/ProductSection"
 import FooterPart2 from "./components/FooterPart2/FooterPart2"
+import ShoppingCartPage from "./components/ShoppingCartPage/ShoppingCartPage"
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
           path="/checkOut"
           element={
             <div>
-              <h1>Check Out Page</h1>
+              <SearchBar />
+              <ShoppingCartPage />
             </div>
           }
         />
