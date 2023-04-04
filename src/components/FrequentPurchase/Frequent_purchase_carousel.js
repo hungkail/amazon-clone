@@ -12,7 +12,7 @@ function Frequent_purchase_Carousel() {
       items: 5
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 4000, min: 1024 },
       items: 8
     },
     tablet: {
@@ -28,31 +28,32 @@ function Frequent_purchase_Carousel() {
   return (
     <div className='carousel'>
       <div className='carousel__title'>Deals on frequently repurchased items</div>
-    <div >
-    <Carousel responsive={responsive}>
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
-      <Carousel_Product />
+      <div className='carousel__wrapper'>
+        <Carousel responsive={responsive}
+           className="carousel__container">
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
+            <Carousel_Product />
 
-    </Carousel>;
-   </div>
+        </Carousel>
+      </div>
     </div>
   )
 }
