@@ -24,3 +24,11 @@
     max-width: 80%;
     max-height: 80%;
 }
+
+.BannerBottom {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    max-width: 75%;
+    max-height: 75%;
+}
