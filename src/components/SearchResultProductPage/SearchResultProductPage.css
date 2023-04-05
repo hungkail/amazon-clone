@@ -11,10 +11,16 @@
 
 .SearchResultProduct {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     margin: 10px;
-    max-height: 500px;
     height: 500px;
-    border: 1px solid gray;
+    border: 1px solid #DFDFDF;
     border-radius: 3px;
+}
+
+.image {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
 }

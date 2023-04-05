@@ -7,17 +7,17 @@
     padding-top: 10px;
 }
 
-p {
+.SearchResultp {
     font-weight: bold;
     font-size: small;
     margin-top: 10px;
 }
 
-span {
+.SearchResultspan {
     font-size: small;
 }
 
-span:hover {
+.SearchResultspan:hover {
     cursor: pointer;
     color: #C24F00;
 }
