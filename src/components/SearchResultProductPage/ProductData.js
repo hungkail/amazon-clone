@@ -5,8 +5,8 @@ function ProductData(props) {
   return (
     <div>
       <img className="image" src={props.image} alt="" />
-      <h3>{props.name}</h3>
-      <h3>${props.price}</h3>
+      <span>{props.name}</span><br />
+      <span>${props.price}</span>
     </div>
   )
 }
