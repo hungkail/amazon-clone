@@ -68,13 +68,13 @@ function Footer_One() {
           alt='amazon logo'
           />
           <select className='dropdown__language__one'>
-            <option>English</option>
-            <option>espanol</option>
+            <option>🌐 English</option>
+            <option>🌐 espanol</option>
           </select>
           <select className='dropdown__language__two'>
-            <option>United State</option>
-            <option>Canada</option>
-            <option>Europe</option>
+            <option>🇺🇸 United State</option>
+            <option>🇨🇦 Canada</option>
+            <option>🇪🇺 Europe</option>
 
           </select>
          </div>
