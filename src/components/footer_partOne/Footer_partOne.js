@@ -67,11 +67,11 @@ function Footer_One() {
           src='https://m.media-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png'
           alt='amazon logo'
           />
-          <select className='dorpdown__language'>
+          <select className='dropdown__language__one'>
             <option>English</option>
             <option>espanol</option>
           </select>
-          <select className='dorpdown__language'>
+          <select className='dropdown__language__two'>
             <option>United State</option>
             <option>Canada</option>
             <option>Europe</option>
