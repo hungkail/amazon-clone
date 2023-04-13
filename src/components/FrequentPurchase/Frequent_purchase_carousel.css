@@ -25,7 +25,7 @@
    
    
     
-    width: 160px;
+    width: 150px;
     height: 400px;
     
  
@@ -47,4 +47,28 @@
 
 .product__info:hover {
     color: orange;
+}
+
+.carousel__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.carousel__container {
+    position: unset;
+    height: 500px;
+    width: 80%;
+    
+    .react-multiple-carousel__arrow {
+        position: absolute;
+    }
+    .react-multiple-carousel__arrow--left {
+        left: calc(-3% + 1px)
+    }
+    .react-multiple-carousel__arrow--right {
+        right: calc(-3% + 1px)
+    }
 }
