@@ -8,6 +8,8 @@ import ProductSection from "./components/ProductSection/ProductSection"
 import FooterPart2 from "./components/FooterPart2/FooterPart2"
 import ShoppingCartPage from "./components/ShoppingCartPage/ShoppingCartPage"
 import Footer_One from "./components/footer_partOne/Footer_partOne";
+import SearchResults from "./components/SearchResults/SearchResults"
+import NavBar from "./components/Nav-Bar/Nav-Bar"
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           element={
             <div>
               <SearchBar />
+              <NavBar />
               <ProductSection />
               <Home />
               <Footer_One />
@@ -48,6 +51,7 @@ function App() {
             <div>
               <SearchBar />
               <ProductPage />
+              <FooterPart2 />
             </div>
           }
         />
@@ -57,6 +61,17 @@ function App() {
             <div>
               <SearchBar />
               <ShoppingCartPage />
+              <FooterPart2 />
+            </div>
+          }
+        />
+        <Route
+          path="/searchResults"
+          element={
+            <div>
+              <SearchBar />
+              <SearchResults />
+              <FooterPart2 />
             </div>
           }
         />
