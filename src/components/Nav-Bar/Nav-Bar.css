@@ -1,9 +1,11 @@
 .navBar {
     background-color: #131921;
     align-items: center;
-    position: sticky;
+    height: 20px;
     top: 0;
     z-index: 100;
+    justify-content: center;
+    padding: 5px;
     
 }
 
