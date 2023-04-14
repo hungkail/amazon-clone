@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Searchbar.css";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -7,6 +7,13 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
 
 function SearchBar() {
+
+ const [searchInput, setSearchInput] = useState(null);
+ function getData(val) {
+  setSearchInput(val.target.value)
+ }
+ const proteinPowder = "Protein Powder" && "protein powder";
+  
   return (
     <div className="searchBar">
       {/* Logo */}
@@ -35,8 +42,16 @@ function SearchBar() {
         <input
           type="text"
           className="searchBar__searchInput searchBar__roundedEdgesLeft"
+          onChange={getData}
+          placeholder="Search Amazon"
         />
-        <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover searchBar__roundedEdgesRight searchBarHover" />
+          {searchInput.includes(proteinPowder)
+          ? <Link to ="/searchResults">
+            <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover searchBar__roundedEdgesRight searchBarHover" />
+            </Link>
+          :
+          <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover searchBar__roundedEdgesRight searchBarHover" />
+          }
       </div>
       {/* Links */}
       <div className="searchBar__Nav">
