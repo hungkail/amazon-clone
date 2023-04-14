@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Searchbar.css";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -7,13 +7,23 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
 
 function SearchBar() {
+  const [searchInput, setSearchInput] = useState(null);
+  function getData(val) {
+    setSearchInput(val.target.value);
+  }
+  let linkto = "/";
+  if (searchInput == "Protein Powder" || searchInput == "protein powder") {
+    linkto = "/searchResults";
+  } else {
+    linkto = "/";
+  }
 
- const [searchInput, setSearchInput] = useState(null);
- function getData(val) {
-  setSearchInput(val.target.value)
- }
- const proteinPowder = "Protein Powder" && "protein powder";
-  
+  let button = (
+    <Link to={linkto}>
+      <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover searchBar__roundedEdgesRight searchBarHover" />
+    </Link>
+  );
+
   return (
     <div className="searchBar">
       {/* Logo */}
@@ -45,13 +55,7 @@ function SearchBar() {
           onChange={getData}
           placeholder="Search Amazon"
         />
-          {searchInput.includes(proteinPowder)
-          ? <Link to ="/searchResults">
-            <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover searchBar__roundedEdgesRight searchBarHover" />
-            </Link>
-          :
-          <SearchIcon className="searchBar__searchIcon searchBar__searchIconHover searchBar__roundedEdgesRight searchBarHover" />
-          }
+        {button}
       </div>
       {/* Links */}
       <div className="searchBar__Nav">
@@ -83,11 +87,14 @@ function SearchBar() {
         </div>
         {/* Shopping Cart */}
         <div className="searchBar__optionBasket">
-          <Link to="/checkOut" style={{textDecoration: 'none', color: 'white'}}>
+          <Link
+            to="/checkOut"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <ShoppingCartOutlinedIcon className="searchBarHover" />
             <span className="searchBar__optionLine2 searchBar__shoppingCartIcon">
               Cart
-          </span>
+            </span>
           </Link>
         </div>
       </div>
